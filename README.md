@@ -1,11 +1,12 @@
 # Allgemeine Aufgabenstellung
-xx
+Dieses Mal werdet ihr zu einem der vorgegebenen Projekte zugeordnet und bearbeitet dieses anschließend als Team. Bereitet für die Präsentation eine 10-15-minütige Präsentation vor. Wie ihr euer Projekt präsentiert, ist euch dieses Mal selbst überlassen. Achtet dabei darauf, ungefähr in diesem Zeitlimit zu bleiben. Jede Person der Gruppe MUSS etwas zur Bearbeitung des Projekts beitragen, die Präsentation darf aber dieses Mal von einzelnen Gruppenmitgliedern oder einer Einzelperson durchgeführt werden.
 
 # Aufgabe 2 Supermarkt Standortdaten Sammlung
 Du hast von einer Supermarkt-Kette den Auftrag bekommen Standortdaten anderer Supermärkte zu sammeln. Diese Daten sollen als Grundlage für eine spätere Standortanalyse für eine neue Filiale genutzt werden sollen.
 Sammle mit den dir bekannten Methoden (API Aufrufe und Webscraping) möglichst viele Standortdaten Deutscher Supermärkte aus dem Internet. Dabei zählt Qualität vor Quantität.
 Das heißt sammle lieber viele Daten zu weniger Supermärkten, als dass du sehr viele Supermärkte mit nur spärlichen Informationen hast. Beschränke dich lieber zunächst auf einzelne Orte und sammle dort möglichst alle Supermärkte. Decke nicht direkt ganz Deutschland ab, wenn das bedeutet, dass du dafür in den einzelnen Regionen nicht alle Filialen erwischst.
 Ein guter Startpunkt ist folgende [Website](https://www.tiendeo.de/Filialen/brandenburg-an-der-havel/supermarkt):
+
 Der Link liefert Filialen in Brandenburg an der Havel. Wenn man den Mittelteil der URL durch einen anderen Stadtnamen ersetzt, kann man auch in anderen Orten suchen.
 Überprüfe immer in der robots.txt, ob du die Daten direkt auslesen darfst.
 
