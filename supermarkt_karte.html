@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_7c92513dd1b91c84869a725a0edcf4ee {
+                #map_766475b4792918f3d17cca4de9b6a582 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,14 +39,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_7c92513dd1b91c84869a725a0edcf4ee" ></div>
+            <div class="folium-map" id="map_766475b4792918f3d17cca4de9b6a582" ></div>
         
 </body>
 <script>
     
     
-            var map_7c92513dd1b91c84869a725a0edcf4ee = L.map(
-                "map_7c92513dd1b91c84869a725a0edcf4ee",
+            var map_766475b4792918f3d17cca4de9b6a582 = L.map(
+                "map_766475b4792918f3d17cca4de9b6a582",
                 {
                     center: [52.4083, 12.5622],
                     crs: L.CRS.EPSG3857,
@@ -60,496 +60,721 @@
 
         
     
-            var tile_layer_410156cbac71d4289a8b98683e8c7662 = L.tileLayer(
+            var tile_layer_9f65a7c1e5de11f6a0dc4296485a5bdd = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_410156cbac71d4289a8b98683e8c7662.addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
+            tile_layer_9f65a7c1e5de11f6a0dc4296485a5bdd.addTo(map_766475b4792918f3d17cca4de9b6a582);
         
     
-            var marker_5acf338b720af97f1b108d747671b4d0 = L.marker(
+            var feature_group_a5d640997f0af229188156f120eee86e = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_ee3c82dfa53fa472dd688616dbe25e8d = L.marker(
                 [52.407878, 12.546588294038148],
                 {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
+            ).addTo(feature_group_a5d640997f0af229188156f120eee86e);
         
     
-        var popup_7364bda0f70e5b2da1ef034fee949074 = L.popup({"maxWidth": "100%"});
+            var icon_c0f593f6442d1dd71dbf928f9246d8dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee3c82dfa53fa472dd688616dbe25e8d.setIcon(icon_c0f593f6442d1dd71dbf928f9246d8dd);
+        
+    
+        var popup_ca8ae7fa67edd917f619ea48673356b8 = L.popup({"maxWidth": 300});
 
         
             
-                var html_630a2b583ed693dcdbf18d83aea9274a = $(`<div id="html_630a2b583ed693dcdbf18d83aea9274a" style="width: 100.0%; height: 100.0%;"><b>REWE</b><br>Neuendorfer Straße 76, Brandenburg an der Havel</div>`)[0];
-                popup_7364bda0f70e5b2da1ef034fee949074.setContent(html_630a2b583ed693dcdbf18d83aea9274a);
+                var i_frame_ab5f8052add14a50a1cc5e43b37d784f = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIFJFV0UKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJwYWRkaW5nOiA1cHg7Ij4KICAgICAgICAgICAgPHA+PHN0cm9uZz5TdGFkdDo8L3N0cm9uZz4gQnJhbmRlbmJ1cmcgYW4gZGVyIEhhdmVsPC9wPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_ca8ae7fa67edd917f619ea48673356b8.setContent(i_frame_ab5f8052add14a50a1cc5e43b37d784f);
             
         
 
-        marker_5acf338b720af97f1b108d747671b4d0.bindPopup(popup_7364bda0f70e5b2da1ef034fee949074)
+        marker_ee3c82dfa53fa472dd688616dbe25e8d.bindPopup(popup_ca8ae7fa67edd917f619ea48673356b8)
         ;
 
         
     
     
-            var marker_3bba6bdc2332c647d1557d659c499ceb = L.marker(
-                [52.4061972, 12.570632],
+            var marker_c02a5b31f138eb78ee08be527b1b5625 = L.marker(
+                [52.4088438, 12.4176991],
                 {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
+            ).addTo(feature_group_a5d640997f0af229188156f120eee86e);
         
     
-        var popup_93b8c04390524bc9ec8ea7ce7290817e = L.popup({"maxWidth": "100%"});
+            var icon_c8d92c0d7837139505937dd4bf12e3af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c02a5b31f138eb78ee08be527b1b5625.setIcon(icon_c8d92c0d7837139505937dd4bf12e3af);
+        
+    
+        var popup_440d391236b138cff345f2102fb39a9e = L.popup({"maxWidth": 300});
 
         
             
-                var html_63fbf9a1af259e9df235d39039abb4d4 = $(`<div id="html_63fbf9a1af259e9df235d39039abb4d4" style="width: 100.0%; height: 100.0%;"><b>Netto</b><br>Potsdamer Straße 16, Brandenburg an der Havel</div>`)[0];
-                popup_93b8c04390524bc9ec8ea7ce7290817e.setContent(html_63fbf9a1af259e9df235d39039abb4d4);
+                var i_frame_ab45389625951277234e2fb33f5bc8f9 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIFJFV0UKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJwYWRkaW5nOiA1cHg7Ij4KICAgICAgICAgICAgPHA+PHN0cm9uZz5TdGFkdDo8L3N0cm9uZz4gQnJhbmRlbmJ1cmcgYW4gZGVyIEhhdmVsPC9wPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_440d391236b138cff345f2102fb39a9e.setContent(i_frame_ab45389625951277234e2fb33f5bc8f9);
             
         
 
-        marker_3bba6bdc2332c647d1557d659c499ceb.bindPopup(popup_93b8c04390524bc9ec8ea7ce7290817e)
+        marker_c02a5b31f138eb78ee08be527b1b5625.bindPopup(popup_440d391236b138cff345f2102fb39a9e)
         ;
 
         
     
     
-            var marker_cc592462387ed090e9c380be7a411be0 = L.marker(
-                [52.4221813, 12.5501231],
+            var marker_b787a95f4b19c948c60972af3fc15514 = L.marker(
+                [52.4079391, 12.5654865],
                 {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
+            ).addTo(feature_group_a5d640997f0af229188156f120eee86e);
         
     
-        var popup_3daf0423a546c489373bbb2e39a33b1a = L.popup({"maxWidth": "100%"});
+            var icon_7d859ae126f32ee4ef43c733cec82298 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b787a95f4b19c948c60972af3fc15514.setIcon(icon_7d859ae126f32ee4ef43c733cec82298);
+        
+    
+        var popup_93b4fe2b7176ede08151f38fc4edb00e = L.popup({"maxWidth": 300});
 
         
             
-                var html_a7eb0e1c27927539a9f175bd60f1de3e = $(`<div id="html_a7eb0e1c27927539a9f175bd60f1de3e" style="width: 100.0%; height: 100.0%;"><b>EDEKA</b><br>Werner-Seelenbinder-Straße 52, Brandenburg an der Havel</div>`)[0];
-                popup_3daf0423a546c489373bbb2e39a33b1a.setContent(html_a7eb0e1c27927539a9f175bd60f1de3e);
+                var i_frame_864f35ea5f07910522659d689ae6d166 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIFJFV0UKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJwYWRkaW5nOiA1cHg7Ij4KICAgICAgICAgICAgPHA+PHN0cm9uZz5TdGFkdDo8L3N0cm9uZz4gQnJhbmRlbmJ1cmcgYW4gZGVyIEhhdmVsPC9wPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_93b4fe2b7176ede08151f38fc4edb00e.setContent(i_frame_864f35ea5f07910522659d689ae6d166);
             
         
 
-        marker_cc592462387ed090e9c380be7a411be0.bindPopup(popup_3daf0423a546c489373bbb2e39a33b1a)
+        marker_b787a95f4b19c948c60972af3fc15514.bindPopup(popup_93b4fe2b7176ede08151f38fc4edb00e)
         ;
 
         
     
     
-            var marker_eca0ff8ad8c1cc6c0f276f1cfaf47d5b = L.marker(
-                [52.4304133, 12.5333833],
+            var marker_b9280f8d04e21c519cd6e138a4ef6d2b = L.marker(
+                [52.4259856, 12.503521],
                 {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
+            ).addTo(feature_group_a5d640997f0af229188156f120eee86e);
         
     
-        var popup_f44241d5e54d8b852296fe84d28f6b33 = L.popup({"maxWidth": "100%"});
+            var icon_98739186af195888a13b8789ea8a98a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b9280f8d04e21c519cd6e138a4ef6d2b.setIcon(icon_98739186af195888a13b8789ea8a98a3);
+        
+    
+        var popup_79598fda27d102a3fbce16438388b504 = L.popup({"maxWidth": 300});
 
         
             
-                var html_25d976710d4bdee75013017d72a11312 = $(`<div id="html_25d976710d4bdee75013017d72a11312" style="width: 100.0%; height: 100.0%;"><b>Lidl</b><br>Upstallstraße 22, Brandenburg an der Havel</div>`)[0];
-                popup_f44241d5e54d8b852296fe84d28f6b33.setContent(html_25d976710d4bdee75013017d72a11312);
+                var i_frame_846d76f42a62b8080cf972b141efd1fe = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIFJFV0UKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJwYWRkaW5nOiA1cHg7Ij4KICAgICAgICAgICAgPHA+PHN0cm9uZz5TdGFkdDo8L3N0cm9uZz4gQnJhbmRlbmJ1cmcgYW4gZGVyIEhhdmVsPC9wPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_79598fda27d102a3fbce16438388b504.setContent(i_frame_846d76f42a62b8080cf972b141efd1fe);
             
         
 
-        marker_eca0ff8ad8c1cc6c0f276f1cfaf47d5b.bindPopup(popup_f44241d5e54d8b852296fe84d28f6b33)
+        marker_b9280f8d04e21c519cd6e138a4ef6d2b.bindPopup(popup_79598fda27d102a3fbce16438388b504)
         ;
 
         
     
     
-            var marker_963cd419a9bd7a41201a2233289bd6dd = L.marker(
-                [52.42671165, 12.517723834375001],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_f8b8c8afdf79d51a6bda734ab847994f = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_3845b91b8496b3b68bc0681bd0560edc = $(`<div id="html_3845b91b8496b3b68bc0681bd0560edc" style="width: 100.0%; height: 100.0%;"><b>EDEKA</b><br>Haydnstraße 19, Brandenburg an der Havel</div>`)[0];
-                popup_f8b8c8afdf79d51a6bda734ab847994f.setContent(html_3845b91b8496b3b68bc0681bd0560edc);
-            
-        
-
-        marker_963cd419a9bd7a41201a2233289bd6dd.bindPopup(popup_f8b8c8afdf79d51a6bda734ab847994f)
-        ;
-
-        
-    
-    
-            var marker_b4df38e921b2b1225817eed492c3d6e8 = L.marker(
-                [52.4088401, 12.4177561],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_b00dc8b05ff48c582f9461f7c622263b = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_bf416ba558e9e84edf4e9b1985c8d920 = $(`<div id="html_bf416ba558e9e84edf4e9b1985c8d920" style="width: 100.0%; height: 100.0%;"><b>REWE</b><br>Genthiner Straße 43, Brandenburg an der Havel</div>`)[0];
-                popup_b00dc8b05ff48c582f9461f7c622263b.setContent(html_bf416ba558e9e84edf4e9b1985c8d920);
-            
-        
-
-        marker_b4df38e921b2b1225817eed492c3d6e8.bindPopup(popup_b00dc8b05ff48c582f9461f7c622263b)
-        ;
-
-        
-    
-    
-            var marker_d979850d12f1d8a4803f741242c2fa5f = L.marker(
-                [52.43208145, 12.531916256374487],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_aa3557935b7d7bbc92acc678cb82f5bf = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_d9fe723e727d636d43a11a2bfb3eff09 = $(`<div id="html_d9fe723e727d636d43a11a2bfb3eff09" style="width: 100.0%; height: 100.0%;"><b>ALDI Nord</b><br>Willibald-Alexis-Straße 40, Brandenburg an der Havel</div>`)[0];
-                popup_aa3557935b7d7bbc92acc678cb82f5bf.setContent(html_d9fe723e727d636d43a11a2bfb3eff09);
-            
-        
-
-        marker_d979850d12f1d8a4803f741242c2fa5f.bindPopup(popup_aa3557935b7d7bbc92acc678cb82f5bf)
-        ;
-
-        
-    
-    
-            var marker_2406289055f5d353c000406e9935b81b = L.marker(
-                [52.4084574, 12.5652499],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_f477bb964c117f6b561e917c74b3d2fe = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_efed554d6adcea0cc4562721ac12fe25 = $(`<div id="html_efed554d6adcea0cc4562721ac12fe25" style="width: 100.0%; height: 100.0%;"><b>REWE</b><br>Sankt-Annen-Straße 23, Brandenburg an der Havel</div>`)[0];
-                popup_f477bb964c117f6b561e917c74b3d2fe.setContent(html_efed554d6adcea0cc4562721ac12fe25);
-            
-        
-
-        marker_2406289055f5d353c000406e9935b81b.bindPopup(popup_f477bb964c117f6b561e917c74b3d2fe)
-        ;
-
-        
-    
-    
-            var marker_01ddbd791539b9f0b1a4addabe1ae165 = L.marker(
-                [52.3821757, 12.5427899],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_f8052bf6b34e8ce7419ff04f8b204cde = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_aba0fcd71f22b5d8d1445bd7235a1c8c = $(`<div id="html_aba0fcd71f22b5d8d1445bd7235a1c8c" style="width: 100.0%; height: 100.0%;"><b>Netto</b><br>Göttiner Landstraße, Brandenburg an der Havel</div>`)[0];
-                popup_f8052bf6b34e8ce7419ff04f8b204cde.setContent(html_aba0fcd71f22b5d8d1445bd7235a1c8c);
-            
-        
-
-        marker_01ddbd791539b9f0b1a4addabe1ae165.bindPopup(popup_f8052bf6b34e8ce7419ff04f8b204cde)
-        ;
-
-        
-    
-    
-            var marker_2f37ffab980ab72ee79ca5a9fe51c6a6 = L.marker(
-                [52.4197756, 12.5472251],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_20a2714ffb9fddcc29f84e6f87f3e916 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_995f0d516f68ca67d5d74670809ac18d = $(`<div id="html_995f0d516f68ca67d5d74670809ac18d" style="width: 100.0%; height: 100.0%;"><b>Netto</b><br>Willi-Sänger-Straße 46, Brandenburg an der Havel</div>`)[0];
-                popup_20a2714ffb9fddcc29f84e6f87f3e916.setContent(html_995f0d516f68ca67d5d74670809ac18d);
-            
-        
-
-        marker_2f37ffab980ab72ee79ca5a9fe51c6a6.bindPopup(popup_20a2714ffb9fddcc29f84e6f87f3e916)
-        ;
-
-        
-    
-    
-            var marker_be28018846d46a80c6d83b7c01c3a867 = L.marker(
-                [52.4030051, 12.569036],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_096b12535e2636dde5c9c3418a46b8e0 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_cdb8d4ced32392a26f9773627ef81bb3 = $(`<div id="html_cdb8d4ced32392a26f9773627ef81bb3" style="width: 100.0%; height: 100.0%;"><b>ALDI Nord</b><br>Geschwister-Scholl-Straße 30, Brandenburg an der Havel</div>`)[0];
-                popup_096b12535e2636dde5c9c3418a46b8e0.setContent(html_cdb8d4ced32392a26f9773627ef81bb3);
-            
-        
-
-        marker_be28018846d46a80c6d83b7c01c3a867.bindPopup(popup_096b12535e2636dde5c9c3418a46b8e0)
-        ;
-
-        
-    
-    
-            var marker_7be126cd093cabc749068ac942869714 = L.marker(
-                [52.420487800000004, 12.544837244453813],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_84c3ad73d187ae081789a2591d36ddd8 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_c7002c5871f19c4c0d3977e1aa400a58 = $(`<div id="html_c7002c5871f19c4c0d3977e1aa400a58" style="width: 100.0%; height: 100.0%;"><b>ALDI Nord</b><br>Willi-Sänger-Straße 66, Brandenburg an der Havel</div>`)[0];
-                popup_84c3ad73d187ae081789a2591d36ddd8.setContent(html_c7002c5871f19c4c0d3977e1aa400a58);
-            
-        
-
-        marker_7be126cd093cabc749068ac942869714.bindPopup(popup_84c3ad73d187ae081789a2591d36ddd8)
-        ;
-
-        
-    
-    
-            var marker_834ab44816c87652b3cd54ea2cdbd273 = L.marker(
-                [52.4261982, 12.5034861],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_d937c0d64b3de66edc4468bc8b675bc1 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_7ebcf3332322d45dfe2e7bff6731f6fd = $(`<div id="html_7ebcf3332322d45dfe2e7bff6731f6fd" style="width: 100.0%; height: 100.0%;"><b>Penny</b><br>Veilchenweg 2, Brandenburg an der Havel</div>`)[0];
-                popup_d937c0d64b3de66edc4468bc8b675bc1.setContent(html_7ebcf3332322d45dfe2e7bff6731f6fd);
-            
-        
-
-        marker_834ab44816c87652b3cd54ea2cdbd273.bindPopup(popup_d937c0d64b3de66edc4468bc8b675bc1)
-        ;
-
-        
-    
-    
-            var marker_6519638024fe79bbf1520fce4886b95d = L.marker(
-                [52.3939453, 12.4099384],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_d82196326d5635b6c357dd11521bc983 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_54e698cacdd9f9cdb1411f092cca7181 = $(`<div id="html_54e698cacdd9f9cdb1411f092cca7181" style="width: 100.0%; height: 100.0%;"><b>Netto</b><br>Wusterwitzer Straße 32F, Brandenburg an der Havel</div>`)[0];
-                popup_d82196326d5635b6c357dd11521bc983.setContent(html_54e698cacdd9f9cdb1411f092cca7181);
-            
-        
-
-        marker_6519638024fe79bbf1520fce4886b95d.bindPopup(popup_d82196326d5635b6c357dd11521bc983)
-        ;
-
-        
-    
-    
-            var marker_6e2497abf6bb05c437a4a2a858a5ec21 = L.marker(
-                [52.4079653, 12.5045665],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_25b81e58d8d8d014ec528a6d7b0a83c0 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_5053f9f9c60d7be4b584bbdc9a253011 = $(`<div id="html_5053f9f9c60d7be4b584bbdc9a253011" style="width: 100.0%; height: 100.0%;"><b>NP-Discount</b><br>Am Neuendorfer Sand, Brandenburg an der Havel</div>`)[0];
-                popup_25b81e58d8d8d014ec528a6d7b0a83c0.setContent(html_5053f9f9c60d7be4b584bbdc9a253011);
-            
-        
-
-        marker_6e2497abf6bb05c437a4a2a858a5ec21.bindPopup(popup_25b81e58d8d8d014ec528a6d7b0a83c0)
-        ;
-
-        
-    
-    
-            var marker_5043d005a85b0f5f031bdb6d05929e56 = L.marker(
-                [52.4138305, 12.5056807],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_df81f741fe3bd2f5718f5b32ca31bd46 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_9250a3edce3f9d0d4689364de79fe24f = $(`<div id="html_9250a3edce3f9d0d4689364de79fe24f" style="width: 100.0%; height: 100.0%;"><b>Netto</b><br>Magdeburger Landstraße 190, Brandenburg an der Havel</div>`)[0];
-                popup_df81f741fe3bd2f5718f5b32ca31bd46.setContent(html_9250a3edce3f9d0d4689364de79fe24f);
-            
-        
-
-        marker_5043d005a85b0f5f031bdb6d05929e56.bindPopup(popup_df81f741fe3bd2f5718f5b32ca31bd46)
-        ;
-
-        
-    
-    
-            var marker_7cfde68e6b54ca08f19f39661d6a0685 = L.marker(
-                [52.4261982, 12.5034861],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_896e6298b0cf5d65b911209ebf4b86ef = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_3325ab8f5e0cbea3c5d7a3e66e5d1182 = $(`<div id="html_3325ab8f5e0cbea3c5d7a3e66e5d1182" style="width: 100.0%; height: 100.0%;"><b>REWE</b><br>Veilchenweg 2, Brandenburg an der Havel</div>`)[0];
-                popup_896e6298b0cf5d65b911209ebf4b86ef.setContent(html_3325ab8f5e0cbea3c5d7a3e66e5d1182);
-            
-        
-
-        marker_7cfde68e6b54ca08f19f39661d6a0685.bindPopup(popup_896e6298b0cf5d65b911209ebf4b86ef)
-        ;
-
-        
-    
-    
-            var marker_3dcf3653be864462afb5db26283ee9d2 = L.marker(
-                [52.43202235, 12.529867757587969],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_2489ca7e07af747d1ceef6f4dca13e1c = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_84396a3714af5a7afb672d8c145949a6 = $(`<div id="html_84396a3714af5a7afb672d8c145949a6" style="width: 100.0%; height: 100.0%;"><b>Netto</b><br>Rosa-Luxemburg-Allee 4A, Brandenburg an der Havel</div>`)[0];
-                popup_2489ca7e07af747d1ceef6f4dca13e1c.setContent(html_84396a3714af5a7afb672d8c145949a6);
-            
-        
-
-        marker_3dcf3653be864462afb5db26283ee9d2.bindPopup(popup_2489ca7e07af747d1ceef6f4dca13e1c)
-        ;
-
-        
-    
-    
-            var marker_6e8f6341d631a85c02eaeed04036884d = L.marker(
-                [52.4094778, 12.6187397],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_a3aa2a29414251de7e3978b0cb4a154e = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_10a3d5af8588a2b25f4728c6bc6a437d = $(`<div id="html_10a3d5af8588a2b25f4728c6bc6a437d" style="width: 100.0%; height: 100.0%;"><b>Kaufland</b><br>An der Bundesstraße 1, Brandenburg an der Havel</div>`)[0];
-                popup_a3aa2a29414251de7e3978b0cb4a154e.setContent(html_10a3d5af8588a2b25f4728c6bc6a437d);
-            
-        
-
-        marker_6e8f6341d631a85c02eaeed04036884d.bindPopup(popup_a3aa2a29414251de7e3978b0cb4a154e)
-        ;
-
-        
-    
-    
-            var marker_20283206ae4c787fde262194a9e609b9 = L.marker(
-                [52.4048813, 12.5722619],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_8bb7afeeac1ce4887223596de646807d = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_06da30ff6eae66f930d7d7bd3f55bf1b = $(`<div id="html_06da30ff6eae66f930d7d7bd3f55bf1b" style="width: 100.0%; height: 100.0%;"><b>Lidl</b><br>Potsdamer Straße 23, Brandenburg an der Havel</div>`)[0];
-                popup_8bb7afeeac1ce4887223596de646807d.setContent(html_06da30ff6eae66f930d7d7bd3f55bf1b);
-            
-        
-
-        marker_20283206ae4c787fde262194a9e609b9.bindPopup(popup_8bb7afeeac1ce4887223596de646807d)
-        ;
-
-        
-    
-    
-            var marker_58ec172f2d83035f566bece8d4543f79 = L.marker(
-                [52.4183966, 12.5519199],
-                {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
-        
-    
-        var popup_1068dfb1945d03d09dfc2604cc352f74 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_0be29146f3ee57e36949cdcf5549a16c = $(`<div id="html_0be29146f3ee57e36949cdcf5549a16c" style="width: 100.0%; height: 100.0%;"><b>Netto</b><br>Willi-Sänger-Straße 20, Brandenburg an der Havel</div>`)[0];
-                popup_1068dfb1945d03d09dfc2604cc352f74.setContent(html_0be29146f3ee57e36949cdcf5549a16c);
-            
-        
-
-        marker_58ec172f2d83035f566bece8d4543f79.bindPopup(popup_1068dfb1945d03d09dfc2604cc352f74)
-        ;
-
-        
-    
-    
-            var marker_bfbab7a86a0f288a83594bc8a6fc8bb3 = L.marker(
+            var marker_8cadc59f6b5f6b16c38651259e857234 = L.marker(
                 [52.43409485, 12.52089980205418],
                 {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
+            ).addTo(feature_group_a5d640997f0af229188156f120eee86e);
         
     
-        var popup_6dcf4ae4df5894d2b166951353fb9d1d = L.popup({"maxWidth": "100%"});
+            var icon_3a6e783ab39382b3382acd35b01c4842 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8cadc59f6b5f6b16c38651259e857234.setIcon(icon_3a6e783ab39382b3382acd35b01c4842);
+        
+    
+        var popup_dced12be6345710e80ab13c55734c808 = L.popup({"maxWidth": 300});
 
         
             
-                var html_72b4827c233c9b814d1c66c3c180a43d = $(`<div id="html_72b4827c233c9b814d1c66c3c180a43d" style="width: 100.0%; height: 100.0%;"><b>REWE</b><br>Tschirchdamm 17, Brandenburg an der Havel</div>`)[0];
-                popup_6dcf4ae4df5894d2b166951353fb9d1d.setContent(html_72b4827c233c9b814d1c66c3c180a43d);
+                var i_frame_6a0bf2046dcad74a6243e7e495dfc9da = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiByZWQ7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIFJFV0UKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJwYWRkaW5nOiA1cHg7Ij4KICAgICAgICAgICAgPHA+PHN0cm9uZz5TdGFkdDo8L3N0cm9uZz4gQnJhbmRlbmJ1cmcgYW4gZGVyIEhhdmVsPC9wPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_dced12be6345710e80ab13c55734c808.setContent(i_frame_6a0bf2046dcad74a6243e7e495dfc9da);
             
         
 
-        marker_bfbab7a86a0f288a83594bc8a6fc8bb3.bindPopup(popup_6dcf4ae4df5894d2b166951353fb9d1d)
+        marker_8cadc59f6b5f6b16c38651259e857234.bindPopup(popup_dced12be6345710e80ab13c55734c808)
         ;
 
         
     
     
-            var marker_b39c15855f7b3508d25db024b34b7ba4 = L.marker(
+            feature_group_a5d640997f0af229188156f120eee86e.addTo(map_766475b4792918f3d17cca4de9b6a582);
+        
+    
+            var feature_group_1bbcd36d9b159a3a97e9d7b44eaf94da = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_4fd28c5c3ac20b8b378210b605a1241b = L.marker(
+                [52.4221813, 12.5501231],
+                {}
+            ).addTo(feature_group_1bbcd36d9b159a3a97e9d7b44eaf94da);
+        
+    
+            var icon_3b0413d6acf1a6626cc5e6cc577833e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_4fd28c5c3ac20b8b378210b605a1241b.setIcon(icon_3b0413d6acf1a6626cc5e6cc577833e0);
+        
+    
+        var popup_824dcf8865f066e1cea7d32e6404d0f5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_4c29f9abcfd65bde46c964d61554f89c = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIEVERUtBCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT0icGFkZGluZzogNXB4OyI+CiAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhZHQ6PC9zdHJvbmc+IEJyYW5kZW5idXJnIGFuIGRlciBIYXZlbDwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_824dcf8865f066e1cea7d32e6404d0f5.setContent(i_frame_4c29f9abcfd65bde46c964d61554f89c);
+            
+        
+
+        marker_4fd28c5c3ac20b8b378210b605a1241b.bindPopup(popup_824dcf8865f066e1cea7d32e6404d0f5)
+        ;
+
+        
+    
+    
+            var marker_f4a2ce30a9c4e913ab84ffa036eb40df = L.marker(
+                [52.42671165, 12.517723834375001],
+                {}
+            ).addTo(feature_group_1bbcd36d9b159a3a97e9d7b44eaf94da);
+        
+    
+            var icon_927196c948647de5e4f7adaa11ecea19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_f4a2ce30a9c4e913ab84ffa036eb40df.setIcon(icon_927196c948647de5e4f7adaa11ecea19);
+        
+    
+        var popup_d500ca29c8b5b4e2767a3c9c3b9dc020 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_3b5db519b1b9989f8fe8dada31307ebd = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiB5ZWxsb3c7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIEVERUtBCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT0icGFkZGluZzogNXB4OyI+CiAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhZHQ6PC9zdHJvbmc+IEJyYW5kZW5idXJnIGFuIGRlciBIYXZlbDwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_d500ca29c8b5b4e2767a3c9c3b9dc020.setContent(i_frame_3b5db519b1b9989f8fe8dada31307ebd);
+            
+        
+
+        marker_f4a2ce30a9c4e913ab84ffa036eb40df.bindPopup(popup_d500ca29c8b5b4e2767a3c9c3b9dc020)
+        ;
+
+        
+    
+    
+            feature_group_1bbcd36d9b159a3a97e9d7b44eaf94da.addTo(map_766475b4792918f3d17cca4de9b6a582);
+        
+    
+            var feature_group_da76e147c2185d35e2ba068eb770ad4a = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_bf8996cd00fae16288bb26655b5a2cd3 = L.marker(
+                [52.43208145, 12.531916256374487],
+                {}
+            ).addTo(feature_group_da76e147c2185d35e2ba068eb770ad4a);
+        
+    
+            var icon_75d62a9e6c17cf314271069bfc2cfe73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bf8996cd00fae16288bb26655b5a2cd3.setIcon(icon_75d62a9e6c17cf314271069bfc2cfe73);
+        
+    
+        var popup_0d4b91ad3a3622d28e7aeffa2d4e1f77 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_effbccafa1c5ee4b68b9e9be048cb0b8 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBibHVlOyBwYWRkaW5nOiA1cHg7IHRleHQtYWxpZ246IGNlbnRlcjsgCiAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7IGNvbG9yOiB3aGl0ZTsiPgogICAgICAgICAgICBBTERJIE5vcmQKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJwYWRkaW5nOiA1cHg7Ij4KICAgICAgICAgICAgPHA+PHN0cm9uZz5TdGFkdDo8L3N0cm9uZz4gQnJhbmRlbmJ1cmcgYW4gZGVyIEhhdmVsPC9wPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_0d4b91ad3a3622d28e7aeffa2d4e1f77.setContent(i_frame_effbccafa1c5ee4b68b9e9be048cb0b8);
+            
+        
+
+        marker_bf8996cd00fae16288bb26655b5a2cd3.bindPopup(popup_0d4b91ad3a3622d28e7aeffa2d4e1f77)
+        ;
+
+        
+    
+    
+            var marker_96e755dca63b42d7e839988d5cfd5006 = L.marker(
+                [52.4030233, 12.569106365846782],
+                {}
+            ).addTo(feature_group_da76e147c2185d35e2ba068eb770ad4a);
+        
+    
+            var icon_088aa70ed4ad2f49cb374317853630a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_96e755dca63b42d7e839988d5cfd5006.setIcon(icon_088aa70ed4ad2f49cb374317853630a3);
+        
+    
+        var popup_54693cfc0e985241204818e30261796e = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_ec25695f4e752b0d376e4c2f31c95064 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBibHVlOyBwYWRkaW5nOiA1cHg7IHRleHQtYWxpZ246IGNlbnRlcjsgCiAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7IGNvbG9yOiB3aGl0ZTsiPgogICAgICAgICAgICBBTERJIE5vcmQKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJwYWRkaW5nOiA1cHg7Ij4KICAgICAgICAgICAgPHA+PHN0cm9uZz5TdGFkdDo8L3N0cm9uZz4gQnJhbmRlbmJ1cmcgYW4gZGVyIEhhdmVsPC9wPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_54693cfc0e985241204818e30261796e.setContent(i_frame_ec25695f4e752b0d376e4c2f31c95064);
+            
+        
+
+        marker_96e755dca63b42d7e839988d5cfd5006.bindPopup(popup_54693cfc0e985241204818e30261796e)
+        ;
+
+        
+    
+    
+            var marker_1fc26fa61518b11e4cba8472e11ab0cc = L.marker(
+                [52.420487800000004, 12.544837244453813],
+                {}
+            ).addTo(feature_group_da76e147c2185d35e2ba068eb770ad4a);
+        
+    
+            var icon_7285ff4b9115216faa3154fe496f8ea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1fc26fa61518b11e4cba8472e11ab0cc.setIcon(icon_7285ff4b9115216faa3154fe496f8ea2);
+        
+    
+        var popup_7f39fce483315a30c023dc01aeb8f60e = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_81fd21c614510de8d3c9309fc4748f83 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBibHVlOyBwYWRkaW5nOiA1cHg7IHRleHQtYWxpZ246IGNlbnRlcjsgCiAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7IGNvbG9yOiB3aGl0ZTsiPgogICAgICAgICAgICBBTERJIE5vcmQKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJwYWRkaW5nOiA1cHg7Ij4KICAgICAgICAgICAgPHA+PHN0cm9uZz5TdGFkdDo8L3N0cm9uZz4gQnJhbmRlbmJ1cmcgYW4gZGVyIEhhdmVsPC9wPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_7f39fce483315a30c023dc01aeb8f60e.setContent(i_frame_81fd21c614510de8d3c9309fc4748f83);
+            
+        
+
+        marker_1fc26fa61518b11e4cba8472e11ab0cc.bindPopup(popup_7f39fce483315a30c023dc01aeb8f60e)
+        ;
+
+        
+    
+    
+            feature_group_da76e147c2185d35e2ba068eb770ad4a.addTo(map_766475b4792918f3d17cca4de9b6a582);
+        
+    
+            var feature_group_0071dfa24f2c832f3d4f7a3ea288d90f = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_f084ed181363003297351d0dc26e6d53 = L.marker(
+                [52.4304133, 12.5333833],
+                {}
+            ).addTo(feature_group_0071dfa24f2c832f3d4f7a3ea288d90f);
+        
+    
+            var icon_f979c1f46fb09e10b9710d75963e5fbb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f084ed181363003297351d0dc26e6d53.setIcon(icon_f979c1f46fb09e10b9710d75963e5fbb);
+        
+    
+        var popup_64ee36431bdb44bdc7cb44ff41fdca27 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_78e87186c92b932d1cb90b484cd8ee0a = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBncmVlbjsgcGFkZGluZzogNXB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IAogICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkOyBjb2xvcjogd2hpdGU7Ij4KICAgICAgICAgICAgTGlkbAogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgc3R5bGU9InBhZGRpbmc6IDVweDsiPgogICAgICAgICAgICA8cD48c3Ryb25nPlN0YWR0Ojwvc3Ryb25nPiBCcmFuZGVuYnVyZyBhbiBkZXIgSGF2ZWw8L3A+CiAgICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_64ee36431bdb44bdc7cb44ff41fdca27.setContent(i_frame_78e87186c92b932d1cb90b484cd8ee0a);
+            
+        
+
+        marker_f084ed181363003297351d0dc26e6d53.bindPopup(popup_64ee36431bdb44bdc7cb44ff41fdca27)
+        ;
+
+        
+    
+    
+            var marker_c4ea89fc4a9d1f87d30e33e121991dbb = L.marker(
+                [52.40490405, 12.571843173465396],
+                {}
+            ).addTo(feature_group_0071dfa24f2c832f3d4f7a3ea288d90f);
+        
+    
+            var icon_bf77bd43013a202100c0ac2e0c6b32e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c4ea89fc4a9d1f87d30e33e121991dbb.setIcon(icon_bf77bd43013a202100c0ac2e0c6b32e9);
+        
+    
+        var popup_c98b778d242ac2f1b076b3e3c71dec32 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_0fa345ed2b218f5df77606be5b0ec203 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBncmVlbjsgcGFkZGluZzogNXB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IAogICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkOyBjb2xvcjogd2hpdGU7Ij4KICAgICAgICAgICAgTGlkbAogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgc3R5bGU9InBhZGRpbmc6IDVweDsiPgogICAgICAgICAgICA8cD48c3Ryb25nPlN0YWR0Ojwvc3Ryb25nPiBCcmFuZGVuYnVyZyBhbiBkZXIgSGF2ZWw8L3A+CiAgICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_c98b778d242ac2f1b076b3e3c71dec32.setContent(i_frame_0fa345ed2b218f5df77606be5b0ec203);
+            
+        
+
+        marker_c4ea89fc4a9d1f87d30e33e121991dbb.bindPopup(popup_c98b778d242ac2f1b076b3e3c71dec32)
+        ;
+
+        
+    
+    
+            var marker_1f82abdf00fccdaa813a57c2b0d36c69 = L.marker(
                 [52.4138476, 12.5246426],
                 {}
-            ).addTo(map_7c92513dd1b91c84869a725a0edcf4ee);
+            ).addTo(feature_group_0071dfa24f2c832f3d4f7a3ea288d90f);
         
     
-        var popup_f5572c2013f090b4ff8864a0bfa4ed8c = L.popup({"maxWidth": "100%"});
+            var icon_fd7e85af24676357273157d021473ebc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1f82abdf00fccdaa813a57c2b0d36c69.setIcon(icon_fd7e85af24676357273157d021473ebc);
+        
+    
+        var popup_b65a1ef04560468e01654d3dccd43635 = L.popup({"maxWidth": 300});
 
         
             
-                var html_111935cab9cc568e158f88fec3316112 = $(`<div id="html_111935cab9cc568e158f88fec3316112" style="width: 100.0%; height: 100.0%;"><b>Lidl</b><br>Friedrich-Franz-Straße 4, Brandenburg an der Havel</div>`)[0];
-                popup_f5572c2013f090b4ff8864a0bfa4ed8c.setContent(html_111935cab9cc568e158f88fec3316112);
+                var i_frame_1981928acfa16158793d349af9c5b014 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBncmVlbjsgcGFkZGluZzogNXB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IAogICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkOyBjb2xvcjogd2hpdGU7Ij4KICAgICAgICAgICAgTGlkbAogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgc3R5bGU9InBhZGRpbmc6IDVweDsiPgogICAgICAgICAgICA8cD48c3Ryb25nPlN0YWR0Ojwvc3Ryb25nPiBCcmFuZGVuYnVyZyBhbiBkZXIgSGF2ZWw8L3A+CiAgICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_b65a1ef04560468e01654d3dccd43635.setContent(i_frame_1981928acfa16158793d349af9c5b014);
             
         
 
-        marker_b39c15855f7b3508d25db024b34b7ba4.bindPopup(popup_f5572c2013f090b4ff8864a0bfa4ed8c)
+        marker_1f82abdf00fccdaa813a57c2b0d36c69.bindPopup(popup_b65a1ef04560468e01654d3dccd43635)
         ;
 
         
     
+    
+            feature_group_0071dfa24f2c832f3d4f7a3ea288d90f.addTo(map_766475b4792918f3d17cca4de9b6a582);
+        
+    
+            var feature_group_005ac9742256849a6085670aa4efa225 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_a0a8ee42780f3265abcfceaec1056d1b = L.marker(
+                [52.40615065, 12.570671019964662],
+                {}
+            ).addTo(feature_group_005ac9742256849a6085670aa4efa225);
+        
+    
+            var icon_2c45087cc9d6ac9b4bb346157b0130ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_a0a8ee42780f3265abcfceaec1056d1b.setIcon(icon_2c45087cc9d6ac9b4bb346157b0130ee);
+        
+    
+        var popup_490bddc079a2b0b8ce1c05f28ff17860 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_9711b36d1568ca3cffe1181e2d4073ff = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBwdXJwbGU7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIE5ldHRvCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT0icGFkZGluZzogNXB4OyI+CiAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhZHQ6PC9zdHJvbmc+IEJyYW5kZW5idXJnIGFuIGRlciBIYXZlbDwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_490bddc079a2b0b8ce1c05f28ff17860.setContent(i_frame_9711b36d1568ca3cffe1181e2d4073ff);
+            
+        
+
+        marker_a0a8ee42780f3265abcfceaec1056d1b.bindPopup(popup_490bddc079a2b0b8ce1c05f28ff17860)
+        ;
+
+        
+    
+    
+            var marker_c2fd9704a677fd50b1b5fb0e4a4d63a4 = L.marker(
+                [52.3821757, 12.5427899],
+                {}
+            ).addTo(feature_group_005ac9742256849a6085670aa4efa225);
+        
+    
+            var icon_4d9896c25accd2ae4cb55bf68a248669 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_c2fd9704a677fd50b1b5fb0e4a4d63a4.setIcon(icon_4d9896c25accd2ae4cb55bf68a248669);
+        
+    
+        var popup_8804723520da8abe58b4ad8333e1b6ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_62c2354d384474e3fc04f8d808673be5 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBwdXJwbGU7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIE5ldHRvCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT0icGFkZGluZzogNXB4OyI+CiAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhZHQ6PC9zdHJvbmc+IEJyYW5kZW5idXJnIGFuIGRlciBIYXZlbDwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_8804723520da8abe58b4ad8333e1b6ab.setContent(i_frame_62c2354d384474e3fc04f8d808673be5);
+            
+        
+
+        marker_c2fd9704a677fd50b1b5fb0e4a4d63a4.bindPopup(popup_8804723520da8abe58b4ad8333e1b6ab)
+        ;
+
+        
+    
+    
+            var marker_331be45cd3531143543215125492556d = L.marker(
+                [52.419791, 12.5472324],
+                {}
+            ).addTo(feature_group_005ac9742256849a6085670aa4efa225);
+        
+    
+            var icon_9f28c62f8ed25857373ec4b61c82d05d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_331be45cd3531143543215125492556d.setIcon(icon_9f28c62f8ed25857373ec4b61c82d05d);
+        
+    
+        var popup_662c06c7d9b2b269959e66823669a706 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_be722966c2d3f613eb4b7f8e245112ae = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBwdXJwbGU7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIE5ldHRvCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT0icGFkZGluZzogNXB4OyI+CiAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhZHQ6PC9zdHJvbmc+IEJyYW5kZW5idXJnIGFuIGRlciBIYXZlbDwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_662c06c7d9b2b269959e66823669a706.setContent(i_frame_be722966c2d3f613eb4b7f8e245112ae);
+            
+        
+
+        marker_331be45cd3531143543215125492556d.bindPopup(popup_662c06c7d9b2b269959e66823669a706)
+        ;
+
+        
+    
+    
+            var marker_b7475e7972b4cca99a34f62193fd6a84 = L.marker(
+                [52.3939784, 12.409966],
+                {}
+            ).addTo(feature_group_005ac9742256849a6085670aa4efa225);
+        
+    
+            var icon_221f8e23d0c2c1958bfbfb87f19b69e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b7475e7972b4cca99a34f62193fd6a84.setIcon(icon_221f8e23d0c2c1958bfbfb87f19b69e0);
+        
+    
+        var popup_a30515537f3b0943dc8c9fe855adaa6c = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_74403da3bae5f153d513ac01ac8cbf73 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBwdXJwbGU7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIE5ldHRvCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT0icGFkZGluZzogNXB4OyI+CiAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhZHQ6PC9zdHJvbmc+IEJyYW5kZW5idXJnIGFuIGRlciBIYXZlbDwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_a30515537f3b0943dc8c9fe855adaa6c.setContent(i_frame_74403da3bae5f153d513ac01ac8cbf73);
+            
+        
+
+        marker_b7475e7972b4cca99a34f62193fd6a84.bindPopup(popup_a30515537f3b0943dc8c9fe855adaa6c)
+        ;
+
+        
+    
+    
+            var marker_09e911b24683f1ab448b3e5b1d6f2feb = L.marker(
+                [52.413630600000005, 12.50598729797229],
+                {}
+            ).addTo(feature_group_005ac9742256849a6085670aa4efa225);
+        
+    
+            var icon_a8041bc49ea4d9ffafe0b4037f0edfca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_09e911b24683f1ab448b3e5b1d6f2feb.setIcon(icon_a8041bc49ea4d9ffafe0b4037f0edfca);
+        
+    
+        var popup_dff7de53e8a058a8ff0d5d83642af777 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_9898d5e66318f50434d10a68e82f8769 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBwdXJwbGU7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIE5ldHRvCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT0icGFkZGluZzogNXB4OyI+CiAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhZHQ6PC9zdHJvbmc+IEJyYW5kZW5idXJnIGFuIGRlciBIYXZlbDwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_dff7de53e8a058a8ff0d5d83642af777.setContent(i_frame_9898d5e66318f50434d10a68e82f8769);
+            
+        
+
+        marker_09e911b24683f1ab448b3e5b1d6f2feb.bindPopup(popup_dff7de53e8a058a8ff0d5d83642af777)
+        ;
+
+        
+    
+    
+            var marker_afc68cd2d6871b358e1334b6a9da624d = L.marker(
+                [52.43202235, 12.529867757587969],
+                {}
+            ).addTo(feature_group_005ac9742256849a6085670aa4efa225);
+        
+    
+            var icon_3c719cce2b75e459cfb11ee791af86bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_afc68cd2d6871b358e1334b6a9da624d.setIcon(icon_3c719cce2b75e459cfb11ee791af86bc);
+        
+    
+        var popup_4074d386540018a3bdf8985a02d156b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_a21a6017a7a2786f9486cfaa5760fd87 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBwdXJwbGU7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIE5ldHRvCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT0icGFkZGluZzogNXB4OyI+CiAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhZHQ6PC9zdHJvbmc+IEJyYW5kZW5idXJnIGFuIGRlciBIYXZlbDwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_4074d386540018a3bdf8985a02d156b5.setContent(i_frame_a21a6017a7a2786f9486cfaa5760fd87);
+            
+        
+
+        marker_afc68cd2d6871b358e1334b6a9da624d.bindPopup(popup_4074d386540018a3bdf8985a02d156b5)
+        ;
+
+        
+    
+    
+            var marker_ce56acea89b8d84879232820bb3ca00a = L.marker(
+                [52.4186108, 12.5518858],
+                {}
+            ).addTo(feature_group_005ac9742256849a6085670aa4efa225);
+        
+    
+            var icon_4d6899e422e07bf1382086f9d273a04d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_ce56acea89b8d84879232820bb3ca00a.setIcon(icon_4d6899e422e07bf1382086f9d273a04d);
+        
+    
+        var popup_c5850d36ab128f546b19cee498579b9f = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_27f5c97cdbd446e32333612940a829d2 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBwdXJwbGU7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIE5ldHRvCiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT0icGFkZGluZzogNXB4OyI+CiAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhZHQ6PC9zdHJvbmc+IEJyYW5kZW5idXJnIGFuIGRlciBIYXZlbDwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_c5850d36ab128f546b19cee498579b9f.setContent(i_frame_27f5c97cdbd446e32333612940a829d2);
+            
+        
+
+        marker_ce56acea89b8d84879232820bb3ca00a.bindPopup(popup_c5850d36ab128f546b19cee498579b9f)
+        ;
+
+        
+    
+    
+            feature_group_005ac9742256849a6085670aa4efa225.addTo(map_766475b4792918f3d17cca4de9b6a582);
+        
+    
+            var feature_group_2b8a7cca7a243ba88c547236e170e593 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_79e34056821d9574cf226ad34c1cc2dd = L.marker(
+                [52.4259856, 12.503521],
+                {}
+            ).addTo(feature_group_2b8a7cca7a243ba88c547236e170e593);
+        
+    
+            var icon_e540029b10953f2b822182b2c6293656 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_79e34056821d9574cf226ad34c1cc2dd.setIcon(icon_e540029b10953f2b822182b2c6293656);
+        
+    
+        var popup_d6b307e50795cf36e579647780c24fa5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_dc0f3fa52d29b5d577cd1f4cd7d6cac6 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBvcmFuZ2U7IHBhZGRpbmc6IDVweDsgdGV4dC1hbGlnbjogY2VudGVyOyAKICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHdoaXRlOyI+CiAgICAgICAgICAgIFBlbm55CiAgICAgICAgPC9kaXY+CiAgICAgICAgPGRpdiBzdHlsZT0icGFkZGluZzogNXB4OyI+CiAgICAgICAgICAgIDxwPjxzdHJvbmc+U3RhZHQ6PC9zdHJvbmc+IEJyYW5kZW5idXJnIGFuIGRlciBIYXZlbDwvcD4KICAgICAgICA8L2Rpdj4KICAgIDwvZGl2PgogICAg" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_d6b307e50795cf36e579647780c24fa5.setContent(i_frame_dc0f3fa52d29b5d577cd1f4cd7d6cac6);
+            
+        
+
+        marker_79e34056821d9574cf226ad34c1cc2dd.bindPopup(popup_d6b307e50795cf36e579647780c24fa5)
+        ;
+
+        
+    
+    
+            feature_group_2b8a7cca7a243ba88c547236e170e593.addTo(map_766475b4792918f3d17cca4de9b6a582);
+        
+    
+            var feature_group_269d3dc4904325c9f9e2bbea3ed737b4 = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_1733edfa4175476f5244e5f807aaeb33 = L.marker(
+                [52.4099497, 12.615752],
+                {}
+            ).addTo(feature_group_269d3dc4904325c9f9e2bbea3ed737b4);
+        
+    
+            var icon_df7b8900344f681adb96162ed1e39ea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "brown", "prefix": "glyphicon"}
+            );
+            marker_1733edfa4175476f5244e5f807aaeb33.setIcon(icon_df7b8900344f681adb96162ed1e39ea2);
+        
+    
+        var popup_275b7d7a3701b02b5693d13676978a11 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_5c55195828e59a01a0ce5267c4480dbe = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBicm93bjsgcGFkZGluZzogNXB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IAogICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkOyBjb2xvcjogd2hpdGU7Ij4KICAgICAgICAgICAgS2F1ZmxhbmQKICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJwYWRkaW5nOiA1cHg7Ij4KICAgICAgICAgICAgPHA+PHN0cm9uZz5TdGFkdDo8L3N0cm9uZz4gQnJhbmRlbmJ1cmcgYW4gZGVyIEhhdmVsPC9wPgogICAgICAgIDwvZGl2PgogICAgPC9kaXY+CiAgICA=" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_275b7d7a3701b02b5693d13676978a11.setContent(i_frame_5c55195828e59a01a0ce5267c4480dbe);
+            
+        
+
+        marker_1733edfa4175476f5244e5f807aaeb33.bindPopup(popup_275b7d7a3701b02b5693d13676978a11)
+        ;
+
+        
+    
+    
+            feature_group_269d3dc4904325c9f9e2bbea3ed737b4.addTo(map_766475b4792918f3d17cca4de9b6a582);
+        
+    
+            var feature_group_b24ddf495135b9c03e537aab370ad4cf = L.featureGroup(
+                {}
+            );
+        
+    
+            var marker_06011b950cdd9f44f5ead0a381999614 = L.marker(
+                [52.4079653, 12.5045665],
+                {}
+            ).addTo(feature_group_b24ddf495135b9c03e537aab370ad4cf);
+        
+    
+            var icon_28d66b02f7e12316443608a9026db93b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_06011b950cdd9f44f5ead0a381999614.setIcon(icon_28d66b02f7e12316443608a9026db93b);
+        
+    
+        var popup_afce26978cf2793c6d70929bd02279b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var i_frame_23ed11ccf70be0694cb52436154c2717 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICAKICAgIDxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiAnQXJpYWwnLCBzYW5zLXNlcmlmOyBmb250LXNpemU6IDEycHg7IAogICAgICAgICAgICAgICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IGJvcmRlci1yYWRpdXM6IDVweDsgb3ZlcmZsb3c6IGhpZGRlbjsgCiAgICAgICAgICAgICAgICBib3gtc2hhZG93OiAzcHggM3B4IDNweCByZ2JhKDAsMCwwLDAuMik7Ij4KICAgICAgICA8ZGl2IHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiBwaW5rOyBwYWRkaW5nOiA1cHg7IHRleHQtYWxpZ246IGNlbnRlcjsgCiAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7IGNvbG9yOiB3aGl0ZTsiPgogICAgICAgICAgICBOUC1EaXNjb3VudAogICAgICAgIDwvZGl2PgogICAgICAgIDxkaXYgc3R5bGU9InBhZGRpbmc6IDVweDsiPgogICAgICAgICAgICA8cD48c3Ryb25nPlN0YWR0Ojwvc3Ryb25nPiBCcmFuZGVuYnVyZyBhbiBkZXIgSGF2ZWw8L3A+CiAgICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KICAgIA==" width="300" style="border:none !important;" height="150"></iframe>`)[0];
+                popup_afce26978cf2793c6d70929bd02279b0.setContent(i_frame_23ed11ccf70be0694cb52436154c2717);
+            
+        
+
+        marker_06011b950cdd9f44f5ead0a381999614.bindPopup(popup_afce26978cf2793c6d70929bd02279b0)
+        ;
+
+        
+    
+    
+            feature_group_b24ddf495135b9c03e537aab370ad4cf.addTo(map_766475b4792918f3d17cca4de9b6a582);
+        
+    
+            var layer_control_e3b9fb283fd79649d2b5c0ceadb72865_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9f65a7c1e5de11f6a0dc4296485a5bdd,
+                },
+                overlays :  {
+                    "REWE" : feature_group_a5d640997f0af229188156f120eee86e,
+                    "EDEKA" : feature_group_1bbcd36d9b159a3a97e9d7b44eaf94da,
+                    "ALDI Nord" : feature_group_da76e147c2185d35e2ba068eb770ad4a,
+                    "Lidl" : feature_group_0071dfa24f2c832f3d4f7a3ea288d90f,
+                    "Netto" : feature_group_005ac9742256849a6085670aa4efa225,
+                    "Penny" : feature_group_2b8a7cca7a243ba88c547236e170e593,
+                    "Kaufland" : feature_group_269d3dc4904325c9f9e2bbea3ed737b4,
+                    "NP-Discount" : feature_group_b24ddf495135b9c03e537aab370ad4cf,
+                },
+            };
+            let layer_control_e3b9fb283fd79649d2b5c0ceadb72865 = L.control.layers(
+                layer_control_e3b9fb283fd79649d2b5c0ceadb72865_layers.base_layers,
+                layer_control_e3b9fb283fd79649d2b5c0ceadb72865_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_766475b4792918f3d17cca4de9b6a582);
+
+        
 </script>
 </html>
