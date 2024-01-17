@@ -1,50 +1,33 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Leihfahrrad-Stationen Analyse</title>
+    <title>Meine Google Maps Demo</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #0275d8;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            background-color: #0275d8;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #f4f4f4;
-            text-decoration: underline;
+        /* Setzen Sie die Größe der Karte */
+        #map {
+            height: 400px;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Willkommen zum Webscraping-Projekt</h1>
-    <p>Hier finden Sie interaktive Karten, die verschiedene Aspekte der Leihräder-Nutzung visualisieren.</p>
-    <ul>
-        <li><a href="supermarkt_karte.html">Karte aller Märkte</a></li>
-    </ul>
+    <h3>Meine Karte</h3>
+    <!-- Das Div für die Karte -->
+    <div id="map"></div>
+
+    <!-- Google Maps JavaScript API -->
+    <script>
+        // Die Funktion, die die Karte initialisiert
+        function initMap() {
+            // Erstellen Sie ein Map-Objekt
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: -34.397, lng: 150.644}, // Setzen Sie hier Ihre gewünschten Koordinaten
+                zoom: 8
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIS3y8ziXbHXDvQGAMj_Lht2O-1jzQoS0&callback=initMap">
+    </script>
 </body>
 </html>
