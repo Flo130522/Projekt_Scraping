@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #karte {
+      height: 1000px;
+      width: 100%;
+    }
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIS3y8ziXbHXDvQGAMj_Lht2O-1jzQoS0&libraries=places&callback=initMap"></script>
+</head>
+<body>
+  <h1>Supermärkte in Brandenburg an der Havel</h1>
+  <div id="karte"></div>
+
+  <script>
+    var supermärkte = [
+      { name: 'REWE Emil Möbus', lat: 52.4078484, lng: 12.5465674, rating: 4.3 },
+      { name: 'REWE', lat: 52.410264, lng: 12.546116, rating: 4.1 },
+      { name: 'REWE', lat: 52.4095724, lng: 12.5402324, rating: 4.1 },
+      { name: 'REWE Center Karen Laute', lat: 52.4068921, lng: 12.5476426, rating: 4.5 },
+      { name: 'mein real - Brandenburg', lat: 52.3964513, lng: 12.5485403, rating: 4 },
+      { name: 'Lidl', lat: 52.411311, lng: 12.548596, rating: 4.2 },
+      { name: 'REWE', lat: 52.4180132, lng: 12.5498497, rating: 4.2 },
+      { name: 'REWE', lat: 52.4043481, lng: 12.5292394, rating: 4.2 },
+      { name: 'Lidl', lat: 52.4056254, lng: 12.5463664, rating: 4.2 },
+      { name: 'Netto Marken-Discount', lat: 52.4039812, lng: 12.5588192, rating: 3.8 },
+      { name: 'ALDI NORD', lat: 52.406573, lng: 12.553895, rating: 4.1 },
+      { name: 'Lidl', lat: 52.416575, lng: 12.536145, rating: 4.3 },
+      { name: 'EDEKA Höppner', lat: 52.4035286, lng: 12.5486095, rating: 4.1 },
+      { name: 'Netto - Günstig. Besser. Für dich.', lat: 52.4187136, lng: 12.5607514, rating: 3.8 },
+      { name: 'EDEKA Höppner', lat: 52.4109649, lng: 12.5582829, rating: 3.9 },
+      { name: 'ALDI Nord', lat: 52.4197764, lng: 12.5554834, rating: 4 },
+      { name: 'Späti', lat: 52.3986893, lng: 12.5594066, rating: 4.5 },
+      { name: 'Netto - Günstig. Besser. Für dich.', lat: 52.3939556, lng: 12.5410813, rating: 3.9 },
+      { name: 'Netto Marken-Discount', lat: 52.4100866, lng: 12.5497681, rating: 3.9 },
+      { name: 'Kaufland', lat: 52.408523, lng: 12.544364, rating: 4.1 }
+    ];
+
+    var infowindows = []; 
+
+    function initMap() {
+      var karte = new google.maps.Map(document.getElementById('karte'), {
+        center: {lat: 52.4078484, lng: 12.5465674},
+        zoom: 13,
+        styles: [
+          {
+            featureType: 'poi',
+            elementType: 'labels',
+            stylers: [{ visibility: 'off' }]
+          },
+          {
+            featureType: 'transit',
+            elementType: 'labels',
+            stylers: [{ visibility: 'off' }]
+          }
+        ]
+      });
+
+      var customIcon = {
+        url: 'https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png',
+        scaledSize: new google.maps.Size(30, 30)
+      };
+
+      for (var i = 0; i < supermärkte.length; i++) {
+        var supermarkt = supermärkte[i];
+        var marker = new google.maps.Marker({
+          position: { lat: supermarkt.lat, lng: supermarkt.lng },
+          map: karte,
+          title: supermarkt.name,
+          icon: customIcon
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+          content: '<div><strong>' + supermarkt.name + '</strong><br>Rating: ' + supermarkt.rating + '</div>'
+        });
+
+        infowindows.push(infowindow);
+
+        attachInfoWindow(marker, infowindow);
+      }
+    }
+
+    function attachInfoWindow(marker, infowindow) {
+      marker.addListener('click', function() {
+        closeInfoWindows();
+        infowindow.open(marker.getMap(), marker);
+      });
+    }
+
+    function closeInfoWindows() {
+      for (var i = 0; i < infowindows.length; i++) {
+        infowindows[i].close();
+      }
+    }
+  </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIS3y8ziXbHXDvQGAMj_Lht2O-1jzQoS0&libraries=places&callback=initMap"></script>
+  </body>
+  </html>
