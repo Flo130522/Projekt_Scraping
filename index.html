@@ -1,446 +1,647 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Supermärkte in Brandenburg an der Havel">
-    <meta name="keywords" content="Supermarkt, Brandenburg, Einkaufen">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Supermärkte in Brandenburg an der Havel"
+    />
+    <meta name="keywords" content="Supermarkt, Brandenburg, Einkaufen" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
     <title>Supermärkte in Brandenburg</title>
-</head>
-<body>
+  </head>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      padding-top: 50px;
+    }
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+      background-color: #ffffff;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .card-text {
+      font-size: 16px;
+    }
+  </style>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">BrandenMart</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Startseite</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="karte.html">Karte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aufgabenstellung.html">Aufgabenstellung</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="team.html">Team</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">BrandenMart</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Startseite</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="karte.html">Karte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aufgabenstellung.html"
+                >Aufgabenstellung</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <div class="container mt-4">
-        <div class="row">
-            <div class="col-12">
-                <h1>Willkommen bei BrandenMart - Supermärkte in Brandenburg</h1>
-                <p>Hier finden Sie eine Liste der Supermärkte in Brandenburg an der Havel.</p>
-            </div>
+      <div class="row">
+        <div class="col-12">
+          <h1>Willkommen bei BrandenMart - Supermärkte in Brandenburg</h1>
+          <p>
+            Hier finden Sie eine Liste der Supermärkte in Brandenburg an der
+            Havel.
+          </p>
         </div>
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <div class="input-group">
-                    <input type="text" class="form-control" id="searchInput" placeholder="Suche nach Marktname">
-                    <button class="btn btn-outline-secondary" type="button" id="searchButton">Suchen</button>
-                </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <div class="input-group">
-                    <select class="form-select" id="ratingFilter">
-                        <option value="">Alle Google-Bewertungen</option>
-                        <option value="4.5">Google-Bewertung 4.5+</option>
-                        <option value="4.0">Google-Bewertung 4.0+</option>
-                        <option value="3.5">Google-Bewertung 3.5+</option>
-                    </select>
-                    <button class="btn btn-outline-secondary" type="button" id="filterButton">Filtern</button>
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="searchInput"
+              placeholder="Suche nach Marktname"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="searchButton"
+            >
+              Suchen
+            </button>
+          </div>
         </div>
+        <div class="col-md-6 mb-3">
+          <div class="input-group">
+            <select class="form-select" id="ratingFilter">
+              <option value="">Alle Google-Bewertungen</option>
+              <option value="4.5">Google-Bewertung 4.5+</option>
+              <option value="4.0">Google-Bewertung 4.0+</option>
+              <option value="3.5">Google-Bewertung 3.5+</option>
+            </select>
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="filterButton"
+            >
+              Filtern
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container mt-5">
-        <div class="row mt-4" id="marketCards">
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">REWE Emil Möbus</h5>
-                        <p class="card-text">Neuendorfer Str. 76, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.3</strong></p>
-                    </div>
-                </div>
+      <div class="row mt-4" id="marketCards">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">REWE Emil Möbus</h5>
+              <p class="card-text">
+                Neuendorfer Str. 76, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.3</strong>
+              </p>
             </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">mein real - Brandenburg</h5>
-                        <p class="card-text">Wilhelmsdorfer Str. 42A, 14776 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.0</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">REWE</h5>
-                        <p class="card-text">Vereinsstraße 13, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">REWE</h5>
-                        <p class="card-text">Vereinsstraße 36, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">REWE Center Karen Laute</h5>
-                        <p class="card-text">Neuendorfer Str. 77b, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.5</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">REWE</h5>
-                        <p class="card-text">Vereinsstraße 13, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Lidl</h5>
-                        <p class="card-text">Nicolaipl. 10, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.2</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">REWE</h5>
-                        <p class="card-text">Willi-Sänger-Straße 17, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.2</strong></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">REWE</h5>
-                        <p class="card-text">Caasmannstraße 7, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.2</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Lidl</h5>
-                        <p class="card-text">Franz-Ziegler-Straße 28, 14776 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.2</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">NETTO Marken-Discount Marken-Discount</h5>
-                        <p class="card-text">Trauerberg 1B, 14776 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.3</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Aldi Nord</h5>
-                        <p class="card-text">Am Mühlengraben 22, 14776 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Lidl</h5>
-                        <p class="card-text">Neuendorfer Str. 76, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.3</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">EDEKA Höppner</h5>
-                        <p class="card-text">Vereinsstraße 13, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">NETTO Marken-Discount Marken-Discount</h5>
-                        <p class="card-text">Beetzseeufer 4, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 3.8</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">EDEKA Höppner</h5>
-                        <p class="card-text">Hauptstraße 51, 14776 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 3.9</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">ALDI Nord</h5>
-                        <p class="card-text">Brielower Str. 15b, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.0</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">NETTO Marken-Discount Marken-Discount</h5>
-                        <p class="card-text">Wilhelmsdorfer Landstraße 41, 14776 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 3.9</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">NETTO Marken-Discount Marken-Discount</h5>
-                        <p class="card-text">Neuendorfer Str. 76, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 3.9</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Kaufland</h5>
-                        <p class="card-text">Damaschkestraße 31, 14770 Brandenburg a.d. Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">REWE</h5>
-                        <p class="card-text">Sankt-Annen-Straße 23, 14776 Brandenburg an der Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">ALDI Nord</h5>
-                        <p class="card-text">Willi-Sänger-Straße 66, 14772 Brandenburg an der Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Penny</h5>
-                        <p class="card-text">Veilchenweg 2, 14772 Brandenburg an der Havel-Görden</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.0</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">NETTO Marken-Discount</h5>
-                        <p class="card-text">Magdeburger Landstraße 190, 14770 Brandenburg an der Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 3.8</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Penny</h5>
-                        <p class="card-text">Willi-Sänger-Straße 46a, 14770 Brandenburg an der Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.2</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">ALDI Nord</h5>
-                        <p class="card-text">Geschwister-Scholl-Straße 30, 14776 Brandenburg an der Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.0</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">NETTO Marken-Discount</h5>
-                        <p class="card-text">Rosa-Luxemburg-Allee 4A, 14772 Brandenburg an der Havel-Hohenstücken</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.0</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Lidl</h5>
-                        <p class="card-text">Potsdamer Straße 23, 14776 Brandenburg an der Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.2</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Kaufland</h5>
-                        <p class="card-text">An der Bundesstraße 1, 14776 Brandenburg an der Havel-Wust</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">NETTO Marken-Discount</h5>
-                        <p class="card-text">Willi-Sänger-Straße 20, 14776 Brandenburg an der Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.2</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">NETTO Marken-Discount</h5>
-                        <p class="card-text">Wusterwitzer Straße 32F, 14774 Brandenburg an der Havel-Kirchmöser</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 3.8</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">REWE</h5>
-                        <p class="card-text">Tschirchdamm 17, 14772 Brandenburg an der Havel-Hohenstücken</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Lidl</h5>
-                        <p class="card-text">Friedrich-Franz-Straße 4, 14770 Brandenburg an der Havel</p>
-                        <p class="card-text"><strong class="card-rating">Google-Bewertung: 4.1</strong></p>
-                    </div>
-                </div>
-            </div>
-            
+          </div>
         </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">mein real - Brandenburg</h5>
+              <p class="card-text">
+                Wilhelmsdorfer Str. 42A, 14776 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.0</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">REWE</h5>
+              <p class="card-text">
+                Vereinsstraße 13, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">REWE</h5>
+              <p class="card-text">
+                Vereinsstraße 36, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">REWE Center Karen Laute</h5>
+              <p class="card-text">
+                Neuendorfer Str. 77b, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.5</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">REWE</h5>
+              <p class="card-text">
+                Vereinsstraße 13, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lidl</h5>
+              <p class="card-text">
+                Nicolaipl. 10, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.2</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">REWE</h5>
+              <p class="card-text">
+                Willi-Sänger-Straße 17, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.2</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">REWE</h5>
+              <p class="card-text">
+                Caasmannstraße 7, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.2</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lidl</h5>
+              <p class="card-text">
+                Franz-Ziegler-Straße 28, 14776 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.2</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">NETTO Marken-Discount</h5>
+              <p class="card-text">
+                Trauerberg 1B, 14776 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.3</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Aldi Nord</h5>
+              <p class="card-text">
+                Am Mühlengraben 22, 14776 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lidl</h5>
+              <p class="card-text">
+                Neuendorfer Str. 76, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.3</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">EDEKA Höppner</h5>
+              <p class="card-text">
+                Vereinsstraße 13, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">NETTO Marken-Discount</h5>
+              <p class="card-text">
+                Beetzseeufer 4, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 3.8</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">EDEKA Höppner</h5>
+              <p class="card-text">
+                Hauptstraße 51, 14776 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 3.9</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">ALDI Nord</h5>
+              <p class="card-text">
+                Brielower Str. 15b, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.0</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">NETTO Marken-Discount</h5>
+              <p class="card-text">
+                Wilhelmsdorfer Landstraße 41, 14776 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 3.9</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">NETTO Marken-Discount</h5>
+              <p class="card-text">
+                Neuendorfer Str. 76, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 3.9</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Kaufland</h5>
+              <p class="card-text">
+                Damaschkestraße 31, 14770 Brandenburg a.d. Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">REWE</h5>
+              <p class="card-text">
+                Sankt-Annen-Straße 23, 14776 Brandenburg an der Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">ALDI Nord</h5>
+              <p class="card-text">
+                Willi-Sänger-Straße 66, 14772 Brandenburg an der Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Penny</h5>
+              <p class="card-text">
+                Veilchenweg 2, 14772 Brandenburg an der Havel-Görden
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.0</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">NETTO Marken-Discount</h5>
+              <p class="card-text">
+                Magdeburger Landstraße 190, 14770 Brandenburg an der Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 3.8</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Penny</h5>
+              <p class="card-text">
+                Willi-Sänger-Straße 46a, 14770 Brandenburg an der Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.2</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">ALDI Nord</h5>
+              <p class="card-text">
+                Geschwister-Scholl-Straße 30, 14776 Brandenburg an der Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.0</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">NETTO Marken-Discount</h5>
+              <p class="card-text">
+                Rosa-Luxemburg-Allee 4A, 14772 Brandenburg an der
+                Havel-Hohenstücken
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.0</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lidl</h5>
+              <p class="card-text">
+                Potsdamer Straße 23, 14776 Brandenburg an der Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.2</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Kaufland</h5>
+              <p class="card-text">
+                An der Bundesstraße 1, 14776 Brandenburg an der Havel-Wust
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">NETTO Marken-Discount</h5>
+              <p class="card-text">
+                Willi-Sänger-Straße 20, 14776 Brandenburg an der Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.2</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">NETTO Marken-Discount</h5>
+              <p class="card-text">
+                Wusterwitzer Straße 32F, 14774 Brandenburg an der
+                Havel-Kirchmöser
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 3.8</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">REWE</h5>
+              <p class="card-text">
+                Tschirchdamm 17, 14772 Brandenburg an der Havel-Hohenstücken
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lidl</h5>
+              <p class="card-text">
+                Friedrich-Franz-Straße 4, 14770 Brandenburg an der Havel
+              </p>
+              <p class="card-text">
+                <strong class="card-rating">Google-Bewertung: 4.1</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="bg-dark text-white text-center p-3 mt-4">
-        <p>&copy; 2024 BrandenMart. Alle Rechte vorbehalten.</p>
+      <p>&copy; 2024 BrandenMart. Alle Rechte vorbehalten.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var searchInput = document.getElementById('searchInput');
-            var searchButton = document.getElementById('searchButton');
-            var ratingFilter = document.getElementById('ratingFilter');
-            var filterButton = document.getElementById('filterButton');
-            var marketCards = document.getElementById('marketCards').querySelectorAll('.card');
+      document.addEventListener("DOMContentLoaded", function () {
+        var searchInput = document.getElementById("searchInput");
+        var searchButton = document.getElementById("searchButton");
+        var ratingFilter = document.getElementById("ratingFilter");
+        var filterButton = document.getElementById("filterButton");
+        var marketCards = document
+          .getElementById("marketCards")
+          .querySelectorAll(".card");
 
-            searchButton.addEventListener('click', function () {
-                var searchTerm = searchInput.value.toLowerCase();
-                filterMarkets(searchTerm);
-            });
-
-            filterButton.addEventListener('click', function () {
-                var selectedRating = ratingFilter.value;
-                filterByRating(selectedRating);
-            });
-
-            function filterMarkets(searchTerm) {
-                marketCards.forEach(function (card) {
-                    var cardTitle = card.querySelector('.card-title').textContent.toLowerCase();
-                    if (cardTitle.includes(searchTerm) || searchTerm === '') {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            }
-
-            function filterByRating(selectedRating) {
-                marketCards.forEach(function (card) {
-                    var cardRating = parseFloat(card.querySelector('.card-rating').textContent.split(' ')[1]);
-                    if (!selectedRating || cardRating >= parseFloat(selectedRating)) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            }
+        searchButton.addEventListener("click", function () {
+          var searchTerm = searchInput.value.toLowerCase();
+          filterMarkets(searchTerm);
         });
+
+        filterButton.addEventListener("click", function () {
+          var selectedRating = ratingFilter.value;
+          filterByRating(selectedRating);
+        });
+
+        function filterMarkets(searchTerm) {
+          marketCards.forEach(function (card) {
+            var cardTitle = card
+              .querySelector(".card-title")
+              .textContent.toLowerCase();
+            if (cardTitle.includes(searchTerm) || searchTerm === "") {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        }
+
+        function filterByRating(selectedRating) {
+          marketCards.forEach(function (card) {
+            var cardRating = parseFloat(
+              card.querySelector(".card-rating").textContent.split(" ")[1]
+            );
+            if (!selectedRating || cardRating >= parseFloat(selectedRating)) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
